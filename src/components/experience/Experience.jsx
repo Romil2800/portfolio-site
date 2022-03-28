@@ -2,6 +2,6 @@ import "./experience.scss"
 
 export default function Experience() {
   return (
-    <div className='experience'>Experience</div>
+    <div className='experience'  id="experience">Experience</div>
   )
 }
