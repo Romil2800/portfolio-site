@@ -12,6 +12,7 @@
   .left {
     flex: 0.55;
     overflow: hidden;
+    
 
     .imgContainer {
       margin-top: 5%;
@@ -24,6 +25,7 @@
 
       @include mobile {
         align-items: flex-start;
+        
       }
 
       img {
@@ -31,6 +33,7 @@
 
         @include mobile {
           height: 50%;
+          width: 350px;
         }
       }
     }
