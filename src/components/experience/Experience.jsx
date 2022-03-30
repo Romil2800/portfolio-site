@@ -6,8 +6,7 @@ export default function Experience() {
   const data = [
     {
       id: "1",
-      icon: "./assets/globe.png",
-      title: "Web Design",
+      title: "Foody",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
       img:
@@ -48,21 +47,18 @@ export default function Experience() {
         {data.map((d) => (
           <div className="container">
             <div className="item">
+             
               <div className="left">
-                <div className="leftContainer">
-                  <div className="imgContainer">
-                    <img src={d.icon} alt="" />
-                  </div>
-                  <h2>{d.title}</h2>
-                  <p>{d.desc}</p>
-                  <span>Projects</span>
-                </div>
-              </div>
-              <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  src="assets/1.jpg"
                   alt=""
                 />
+              </div>
+               <div className="right">
+                <div className="leftContainer">
+                  <h2>{d.title}</h2>
+                  <p>{d.desc}</p>
+                </div>
               </div>
             </div>
           </div>

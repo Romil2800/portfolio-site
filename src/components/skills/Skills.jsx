@@ -1,66 +1,66 @@
 import { useEffect, useState } from "react";
-import PortfolioList from "../projectList/ProjectList";
-import "./portfolio.scss";
+import PortfolioList from "../SkillsList/SkillsList";
+import "./skills.scss";
 
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  programmingSkills,
+  webTechSkills,
+  mobileDevSkills,
+  databaseSkills,
+  otherSkills,
 } from "../../data";
 
-export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+export default function Skills() {
+  const [selected, setSelected] = useState("programming");
   const [data, setData] = useState([]);
   const list = [
     {
-      id: "featured",
-      title: "Featured",
+      id: "programming",
+      title: "Programming",
     },
     {
       id: "web",
-      title: "Web App",
+      title: "Web Tech",
     },
     {
       id: "mobile",
-      title: "Mobile App",
+      title: "Mobile Development",
     },
     {
-      id: "design",
-      title: "Design",
+      id: "database",
+      title: "Database",
     },
     {
-      id: "content",
-      title: "Content",
+      id: "other",
+      title: "Others",
     },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
+      case "programming":
+        setData(programmingSkills);
         break;
       case "web":
-        setData(webPortfolio);
+        setData(webTechSkills);
         break;
       case "mobile":
-        setData(mobilePortfolio);
+        setData(mobileDevSkills);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "database":
+        setData(databaseSkills);
         break;
-      case "content":
-        setData(contentPortfolio);
+      case "other":
+        setData(otherSkills);
         break;
       default:
-        setData(featuredPortfolio);
+        setData(programmingSkills);
     }
   }, [selected]);
 
   return (
- <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+ <div className="skills" id="skills">
+      <h1>Skills</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
