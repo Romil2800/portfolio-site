@@ -12,10 +12,10 @@ let timelines = [
   },
   {
     id: 2,
-    title: "Android Developer",
+    title: "Freelancer - Android Developer",
     location: "Dartmouth, NS.",
     description:
-      "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
+      "Developing an application in Kotlin using Android Studio from start to finish. Responsible for full app life-cycle: concept, design, build, test, deploy and release to the playstore. Developed 15+ applications for Android-based mobile phones.Performed unit testing and system integration testing of the developed code product.",
     buttonText: "View Projects",
     date: "August 2021 - present",
     website: "https://github.com/Romil2800?tab=repositories",
@@ -27,7 +27,7 @@ let timelines = [
     title: "Technical Support",
     location: "Dartmouth, NS.",
     description:
-      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
+      "Troubleshooting customer problem and providing resolution including Modem provisioning, device configuration, application support, software download, network connectivity, etc.",
     buttonText: "HGS - Hinduja Global Solutions",
     date: "June 2020 - September 2020",
     website: " https://www.joinhgs.com/ca/en",
@@ -38,7 +38,7 @@ let timelines = [
     title: "Computer Programming",
     location: "Toronto, ON.",
     description:
-      "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      "Learn about current trends in Software Development with different languages such as Java, JavaScript, HTML, CSS, etc.",
     buttonText: "Lambton College",
     date: "May 2018 - December 2019",
     icon: "school",

@@ -1,0 +1,56 @@
+@import "../../global.scss";
+
+.pl {
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.pl-title {
+    font-size: 40px;
+    font-weight: 600;
+    width: 45%;
+    height: 23%; 
+    margin-right: 5%;
+    align-items:flex-start;   
+
+    @include mobile {
+        font-size: 25px;
+        font-weight: 500;
+    }
+}
+
+.listContainer{
+    align-items: center;
+    width: 90%;
+    margin-left: 10%;
+
+    @include mobile {
+        margin-left: 0%;
+    }
+}
+
+.pl-list {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    .pl {
+        padding: 10px;
+    }
+
+    .pl-texts {
+        width: 100%;
+    }
+
+    .pl-desc {
+        display: none;
+    }
+}

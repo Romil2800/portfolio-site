@@ -1,6 +1,7 @@
 import "./intro.scss"
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import { Facebook, Instagram, LinkedIn, GitHub } from '@material-ui/icons'
 
 export default function Intro() {
   const textRef = useRef();
@@ -28,8 +29,15 @@ export default function Intro() {
           <h3>
             Freelancer <span ref={textRef}></span>
           </h3>
+          
         </div>
-        <a href="#portfolio">
+          <div className="icons">
+                                <GitHub className='icon'onClick={() => window.location.replace("https://github.com/Romil2800?tab=repositories")}/>
+                                <Instagram className='icon'/>
+                                <Facebook className='icon'/>
+                                <LinkedIn className='icon' onClick={() => window.location.replace("https://www.linkedin.com/in/romilp/")}/>
+                            </div>
+        <a href="#timeline">
           <img src="assets/down.png" alt="" />
         </a>
       </div>
